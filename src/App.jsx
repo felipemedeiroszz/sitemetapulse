@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import Hero from './components/Hero'
-import TechShowcase from './components/TechShowcase'
-import Services from './components/Services'
+import Highlights from './components/Highlights'
+import About from './components/About'
+import Projects from './components/Projects'
 import Footer from './components/Footer'
 import CodeRain from './components/CodeRain'
-import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Technologies from './components/Technologies'
+import Marketing from './components/Marketing'
+import metapulseLogo from '../img/metapulse.png'
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -18,8 +21,7 @@ export default function App() {
       <div className="bg-grid" />
       <header className="nav">
         <div className="brand">
-          <span className="logo-glow" />
-          NeonForge
+          <img src={metapulseLogo} alt="Metapulse" className="brand-logo" />
         </div>
         <button
           className={`hamburger ${menuOpen ? 'is-open' : ''}`}
@@ -33,20 +35,25 @@ export default function App() {
           <span />
         </button>
         <nav id="primary-nav" className={menuOpen ? 'open' : ''} onClick={closeMenu}>
-          <a href="#projetos">Projetos</a>
-          <a href="#servicos">Serviços</a>
+          <a href="#destaques">Destaques</a>
+          <a href="#sobre">Sobre Nós</a>
           <a href="#tecnologias">Tecnologias</a>
+          <a href="#marketing">Marketing</a>
+          <a href="#projetos">Nossos Projetos</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
       <main>
         <Hero />
-        <TechShowcase />
+        <Highlights />
+        <About />
+        <Technologies />
+        <Marketing />
         <Projects />
-        <Services />
         <Contact />
       </main>
       <Footer />
     </div>
   )
 }
+

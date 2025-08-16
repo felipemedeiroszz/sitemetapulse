@@ -32,7 +32,7 @@ Authorization: Bearer <token>
 export default function Projects() {
   return (
     <section id="projetos" className="section" aria-label="Projetos">
-      <h2>Projetos em destaque</h2>
+      <h2 className="typewriter">Nossos Projetos</h2>
       <p style={{ color: 'var(--muted)' }}>Alguns exemplos de soluções que entregamos recentemente.</p>
       <div className="projects">
         {projects.map((p) => (
