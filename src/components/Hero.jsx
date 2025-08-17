@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import logo from '../../img/metapulse.png'
+import logo from '../../img/LOGO.png'
 
 export default function Hero() {
   return (
