@@ -8,7 +8,7 @@ import CodeRain from './components/CodeRain'
 import Contact from './components/Contact'
 import Technologies from './components/Technologies'
 import Marketing from './components/Marketing'
-import metapulseLogo from '../img/LOGO.png'
+import metapulseLogo from '../img/metapulse.png'
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
